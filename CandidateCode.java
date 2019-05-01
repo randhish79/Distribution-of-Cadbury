@@ -36,18 +36,22 @@ public class CandidateCode {
 			return;
 		}
 	}
-
+// Input :-   4 Integers will be provieded as input 
+//	Given Input :  5 6 3 4 
+//	First 2 integers are given length of possible rectangles 
+//      	
+// Possible rectangles that can be formed from input : --     5 x 3 ,  5x4,   6 x3, 6x4 	
 	public static void main(String args[]) throws Exception {
 
 		Scanner sc = new Scanner(System.in);// Write code here
-		int[] dimesions = new int[4];
+		int[] dimensionsOfGivenRecantagle = new int[4];
 		for (int i = 0; i < 4; i++) {
-			dimesions[i] = sc.nextInt();
+			dimensionsOfGivenRecantagle[i] = sc.nextInt();
 		}
 
 		for (int i = 0; i < 2; i++) {
 			for (int j = 2; j < 4; j++) {
-				possibleSqaures(dimesions[i], dimesions[j]);
+				possibleSqaures(dimensionsOfGivenRecantagle[i], dimensionsOfGivenRecantagle[j]);
 			}
 		}
 		System.out.println(count);
