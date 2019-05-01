@@ -1,4 +1,25 @@
+/* Input :-   4 Integers will be provieded as input 
+		Test Input :  5 6 3 4 
+		First 2 integers are given length of possible rectangles 
+      	
+ 		Possible rectangles that can be formed from input : --     5 x 3 ,  5x4,   6 x3, 6x4 
+		
+		You have to find out maximum perfect squares that can be formed from these rectangular chocolates.
+		Example : -   For :  5 x3 rectangle   Possible perfect squares would be : - 3x3 
+											    2x2
+											    1x1
+											    1x1
+	`			So, Chocolates can be given to 4 children
+			Similarly, For :  6 x3 rectangle   Possible perfect squares would be : - 3x3 
+											   	 3x3
+				So, Chocolates can be given to 2 children
+				
+Objective : You have to caluclate the number of children which can be given perfect square chocolates 
+            from given length and breadth of rectangle of chocolates. 
+											   
 
+ 
+*/
 /* 
  * Enter your code here. Read input from STDIN. Print your output to STDOUT. 
  * Your class should be named CandidateCode.
@@ -36,11 +57,7 @@ public class CandidateCode {
 			return;
 		}
 	}
-// Input :-   4 Integers will be provieded as input 
-//	Given Input :  5 6 3 4 
-//	First 2 integers are given length of possible rectangles 
-//      	
-// Possible rectangles that can be formed from input : --     5 x 3 ,  5x4,   6 x3, 6x4 	
+	
 	public static void main(String args[]) throws Exception {
 
 		Scanner sc = new Scanner(System.in);// Write code here
